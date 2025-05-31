@@ -1,0 +1,59 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b3c2d4; /* Optional: Light background color */
+}
+
+/* Style the container to center it, give it a background color, padding, etc. */
+.container {
+    background-color: #ffffff; /* Light blue color */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    text-align: center; /* Center the text inside */
+    width: 700px; /* Set a width for the form container */
+    height: 250px;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+
+}
+
+input[type="file"]::file-selector-button {
+    margin-bottom: 20px;
+    margin: 20px 0;
+    background-color: #9da0a6; /* Background color for the button */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px ; /* Rounded corners */
+    border: none;
+    
+    /* font-size: 16px;  */
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: #bebcbc; /* Change background color on hover */
+}
+button {
+    background-color: #9da0a6;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #bebcbc;
+}
