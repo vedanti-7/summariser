@@ -9,6 +9,7 @@ cryptography==45.0.6
 docopt==0.6.2
 Flask==3.1.2
 fpdf==1.7.2
+gunicorn==23.0.0
 idna==3.10
 itsdangerous==2.2.0
 Jinja2==3.1.6
@@ -17,6 +18,7 @@ lxml==6.0.1
 MarkupSafe==3.0.2
 nltk==3.9.1
 numpy==2.3.2
+packaging==25.0
 pdfminer.six==20250506
 pdfplumber==0.11.7
 pillow==11.3.0
