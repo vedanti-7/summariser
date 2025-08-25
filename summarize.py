@@ -1,5 +1,8 @@
 import nltk
-nltk.download('punkt')
+try:
+    nltk.data.find("tokenizers/punkt")
+except LookupError:
+    nltk.download("punkt")
 from nltk.tokenize import sent_tokenize
 from PyPDF2 import PdfReader
 nltk.data.path.append('/Users/apple/nltk_data')  # or the correct path to your NLTK data

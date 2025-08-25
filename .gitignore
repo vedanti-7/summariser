@@ -1,0 +1,16 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore virtual environment
+venv/
+env/
+
+# Ignore PDFs or generated files
+*.pdf
+
+# Ignore font cache files
+fonts/*.pkl
+
+# Ignore system files
+.DS_Store
