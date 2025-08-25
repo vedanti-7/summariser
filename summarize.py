@@ -1,8 +1,21 @@
 import nltk
+import os
+
+# Create a local nltk_data folder inside your project
+nltk_data_dir = os.path.join(os.path.dirname(__file__), "nltk_data")
+
+if not os.path.exists(nltk_data_dir):
+    os.makedirs(nltk_data_dir)
+
+# Add the local folder to NLTK's path
+nltk.data.path.append(nltk_data_dir)
+
+# Download punkt if not already present
 try:
     nltk.data.find("tokenizers/punkt")
 except LookupError:
-    nltk.download("punkt")
+    nltk.download("punkt", download_dir=nltk_data_dir, quiet=True)
+
 from nltk.tokenize import sent_tokenize
 from PyPDF2 import PdfReader
 nltk.data.path.append('/Users/apple/nltk_data')  # or the correct path to your NLTK data
